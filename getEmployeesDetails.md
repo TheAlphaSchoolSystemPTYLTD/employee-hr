@@ -27,7 +27,61 @@
 * **Success Response:**
 
     ```javascript
-        ???????
+      "employees": [
+        {
+          "address": {
+              "town_suburb": "CANNON HILL",
+              "address_line_1": "10 Holt St",
+              "address_barcode": "",
+              "address_description": "1. Employee Address *",
+              "address_line_2": "",
+              "state": "QLD",
+              "employee_name": "Mr A Johnstone",
+              "email": "AJohnstone@tassweb.com.au",
+              "work_phone": "",
+              "mobile_phone": "0413443650",
+              "country": "",
+              "sms": "Y",
+              "post_code": 4170,
+              "home_phone": "3899 4190"
+            },
+          "general": {
+              "initials": "A",
+              "employment_status": "F",
+              "surname": "Johnstone",
+              "marital_status": "M",
+              "supervisor": 1000012,
+              "position_title": "Head of Senior School",
+              "start_date": "04/09/2000",
+              "employee_code": 1000016,
+              "school_email": "",
+              "teacher_code": "AJ",
+              "position_text": "Teacher",
+              "termination_date": "",
+              "supervisor_2": 1000023,
+              "name_suffixes": "",
+              "gender": "M",
+              "title": "Mr",
+              "driver_licence_no": "",
+              "date_of_birth": "01/11/1968",
+              "supplier_code": "",
+              "given_names": "Alan Pierre",
+              "prefferred_name": "Alan"
+            },
+          "next_of_kin": {
+              "town_suburb": "CANNON HILL",
+              "address_line_1": "10 Holt Street",
+              "country": "AUSTRALIA",
+              "address_line_2": "",
+              "state": "QLD",
+              "post_code": 4170,
+              "home_phone": "3899 4190  mob 0427 776 116",
+              "relationship": "Wife",
+              "work_phone": "3217 6654",
+              "name": "Amanda Johnson"
+            }
+        }
+      ]
     ```
  
 * **Error Response:**
@@ -63,7 +117,7 @@
 * **Sample GET:** (With URL Encoded `token`)
 
   ```HTML
-    http://api.tasscloud.com.au/tassweb/api/?method=getEmployeesDetails&appcode=DEMOEH&company=10&v=2&token=???????
+    http://api.tasscloud.com.au/tassweb/api/?method=GetEmployeesDetails&appcode=DEMOEH&company=10&v=2&token=rg1uVRBUqrSJ27fqtHDPpS2CYvDiKFEozzjpYTfgqrdyuVVKcJIcCSshy%2Bxdaan%2B
   ```
   
 * **Sample POST:**
@@ -74,6 +128,6 @@
        <input type="hidden" name="appcode" value="DEMOEH">
        <input type="hidden" name="company" value="10">
        <input type="hidden" name="v" value="2">
-       <textarea name="token">???????</textarea>
+       <textarea name="token">rg1uVRBUqrSJ27fqtHDPpS2CYvDiKFEozzjpYTfgqrdyuVVKcJIcCSshy+xdaan+</textarea>
     </form>
   ```
