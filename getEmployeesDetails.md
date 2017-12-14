@@ -66,7 +66,7 @@
               "date_of_birth": "01/11/1968",
               "supplier_code": "",
               "given_names": "Alan Pierre",
-              "prefferred_name": "Alan"
+              "preferred_name": "Alan"
             },
           "next_of_kin": {
               "town_suburb": "CANNON HILL",
