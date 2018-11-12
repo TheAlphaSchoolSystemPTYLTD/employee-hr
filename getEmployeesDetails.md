@@ -2,6 +2,12 @@
 ----
   Returns an array of structured Employee data comprising general, address, and next of kin details in JSON format.
 
+* **Version History:**
+
+  TASS v48 - Method Added
+  
+  TASS v49.7.TBD - Added optional `includephoto` and `thumbnail` parameters
+  
 * **Version:**
 
   2
@@ -19,10 +25,12 @@
    **Optional:**
 
    `code [string]` - Employee code
+   
+   `includephoto [boolean]` -  Must be 'true' or 'false' for whether returning employee photo.
 
    **Conditional:**
  
-   none
+   `thumbnail [boolean]` -  Must be 'true' or 'false' for whether or not to employee thumbnail photo. Only valid where `includephoto` is 'true'
 
 * **Success Response:**
 
