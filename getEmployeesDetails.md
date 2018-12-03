@@ -6,7 +6,7 @@
 
   TASS v48 - Method Added
   
-  TASS v49.7.TBD - Added optional `includephoto` and `thumbnail` parameters
+  TASS v49.7.044 - Added optional `includephoto` and `thumbnail` parameters
   
 * **Version:**
 
