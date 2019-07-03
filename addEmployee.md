@@ -60,8 +60,6 @@
 
 	`driv_lic_text [string]` - driver license.
 
-	`term_date [date]` - terminattion date.
-
 	`position_text [string]` - position text.
 
 	`nok_name_text [string]` - next of kin name.
@@ -118,8 +116,8 @@
 			"salutation_flag": "Dr",
 			"web_password": "encrypted",
 			"surname_text": "Goo",
-			"term_date": "27/06/2019",
 			"supervisor_code": 1000075,
+			"supervisor2_code": 1000066,
 			"nok_city_text": "Kelvin Grove",
 			"nok_phone_w_text": "0450053333",
 			"position_title": "Teacher",
@@ -593,17 +591,6 @@
 	}
 	```
 	
-	`term_date` length longer than 10
-	```javascript
-	"__invalid": {
-		"employee": {
-			"[record num]": {
-				"term_date": "exceeds 10 characters."
-			}
-		}
-	}
-	```
-	
 	`emp_code` passed in if employee code format is numeric
 	```javascript
 	"__invalid": {
@@ -713,6 +700,28 @@
 		}
 	}
 	```
+
+	`supervisor2_code` cannot be passed in if supervisor_code is not passed in
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"supervisor2_code": "supervisor2_code is invalid when supervisor_code is undefined."
+			}
+		}
+	}
+	```
+
+	`supervisor2_code` cannot be the same as supervisor_code
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"supervisor2_code": "supervisor_code and supervisor2_code cannot be the same."
+			}
+		}
+	}
+	```
 	
 	`status_text` must be a employeement status in table tel_emp_stat
 	```javascript
@@ -757,6 +766,17 @@
 		}
 	}
 	```
+	
+	`sms_flg` must be Y or N
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"sms_flg": "'[sms_flg]' is not a valid sms flag, must be either Y or N."
+			}
+		}
+	}
+	```
 
 * **Sample Parameters:**
 
@@ -785,7 +805,6 @@
 					"marital_stat_flag":"S",
 					"birth_date":"25/06/1986",
 					"driv_lic_text":"123456",
-					"term_date":"27/06/2019",
 					"position_text":"teacher",
 					"nok_name_text":"Tea",
 					"nok_relat_text":"Mother",
@@ -805,7 +824,7 @@
 					"position_title":"Teacher",
 					"vend_code":"00012",
 					"supervisor_code":"1000075",
-					"supervisor2_code":"1000075",
+					"supervisor2_code":"1000066",
 					"sms_flg":"Y",
 					"dpid_text":"Npne",
 					"school_email":"jackschool@tass.com"
