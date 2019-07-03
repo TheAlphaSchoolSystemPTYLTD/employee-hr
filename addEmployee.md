@@ -1,6 +1,10 @@
 **AddEmployee**
 ----
 	Returns "success" and a count of added employee(s), or a structure of invalid validations "__invalid" belonging to employee(s).
+	
+* **Version History:**
+
+	TASS v51.1 - Method Added
 
 * **Version:**
 
