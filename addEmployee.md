@@ -166,13 +166,6 @@
  
 * **Error Response:**
 
-	`HR license` not valid
-	```javascript
-	__invalid: {
-		"license": "HR license is not valid."
-	}
-	```
-
 	`employee` not supplied
 	```javascript
 	__invalid: {
