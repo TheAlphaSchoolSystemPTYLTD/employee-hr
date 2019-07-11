@@ -166,6 +166,13 @@
  
 * **Error Response:**
 
+	`HR license` not valid
+	```javascript
+	__invalid: {
+		"license": "HR license is not valid."
+	}
+	```
+
 	`employee` not supplied
 	```javascript
 	__invalid: {
@@ -641,6 +648,28 @@
 		"employee": {
 			"[record num]": {
 				"state_text": "state_text is required if in Australia."
+			}
+		}
+	}
+	```
+	
+	`post_code` must be in the range 0200 to 9999 if stp_enabled = 'Y'
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"post_code": "Post Code must be in the range 0200 to 9999."
+			}
+		}
+	}
+	```
+	
+	`post_code` must be a number if stp_enabled = 'Y'
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"post_code": "Value is not a valid number."
 			}
 		}
 	}
