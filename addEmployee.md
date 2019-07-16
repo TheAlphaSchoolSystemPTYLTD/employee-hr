@@ -88,8 +88,6 @@
 
 	`web_password [string]` - Kiosk password.
 
-	`allow_amt [string]` - allow amount.
-
 	`name_suffix [string]` - name suffix.
 
 	`position_title [string]` - position title.
@@ -101,8 +99,6 @@
 	`supervisor2_code [string]` - supervisor2 code.
 
 	`sms_flg [string]` - sms flag.
-
-	`dpid_text [string]` - address barcode.
 
 	`school_email [email]` - school email.
 
@@ -121,13 +117,11 @@
 			"nok_city_text": "Kelvin Grove",
 			"nok_phone_w_text": "0450053333",
 			"position_title": "Teacher",
-			"allow_amt": 100,
 			"nok_add2_text": "U2 67 Blamey Street",
 			"position_text": "teacher",
 			"sex_flag": "M",
 			"add2_text": "U2 67 Blamey Street",
 			"birth_date": "25/06/1986",
-			"dpid_text": "Npne",
 			"driv_lic_text": 123456,
 			"post_code": 4059,
 			"ID": 1,
@@ -458,17 +452,6 @@
 		}
 	}
 	```
-
-	`allow_amt` length longer than 256
-	```javascript
-	"__invalid": {
-		"employee": {
-			"[record num]": {
-				"allow_amt": "exceeds 256 characters."
-			}
-		}
-	}
-	```
 	
 	`name_suffix` length longer than 30
 	```javascript
@@ -531,17 +514,6 @@
 		"employee": {
 			"[record num]": {
 				"sms_flg": "exceeds 1 characters."
-			}
-		}
-	}
-	```
-	
-	`dpid_text` length longer than 40
-	```javascript
-	"__invalid": {
-		"employee": {
-			"[record num]": {
-				"dpid_text": "exceeds 40 characters."
 			}
 		}
 	}
@@ -841,14 +813,12 @@
 					"mob_phone":"0450052002",
 					"e_mail":"jack@tass.com",
 					"web_password":"encrypted",
-					"allow_amt":"100.00",
 					"name_suffix":"MEE",
 					"position_title":"Teacher",
 					"vend_code":"00012",
 					"supervisor_code":"1000075",
 					"supervisor2_code":"1000066",
 					"sms_flg":"Y",
-					"dpid_text":"Npne",
 					"school_email":"jackschool@tass.com"
 				}
 			]
