@@ -11,6 +11,7 @@ This API extracts the following employee related information:
 
 **Methods**
 
+  * addEmployee
   * getEmployeesDetails
   * getEmployeeUD
   * getEmployeeUDSetup
