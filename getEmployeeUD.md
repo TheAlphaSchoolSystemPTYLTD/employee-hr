@@ -33,114 +33,49 @@
 * **Success Response:**
 
     ```javascript
-    "areas": [
 		{
-			"area": {
-				"code": 1,
-				"description": "Performance Appraisals",
-				"responsibility": ""
-			},
-			"ud": {
-				"1": {
-					"id": 1,
-					"value": "Y",
-					"desc": "2010 Review",
-					"name": "UD1_DESC"
-				},
-				"2": {
-					"id": 2,
-					"value": "N",
-					"desc": "10 Checklist complet",
-					"name": "UD2_DESC"
-				},
-				"3": {
-					"id": 3,
-					"value": "Y",
-					"desc": "Req Courses complete",
-					"name": "UD3_DESC"
-				},
-				"4": {
-					"id": 4,
-					"value": "",
-					"desc": "",
-					"name": "UD4_DESC"
-				},
-				...
-				"10": {
-					"id": 10,
-					"value": "",
-					"desc": "",
-					"name": "UD10_DESC"
-				},
-				"11": {
-					"id": 11,
-					"value": "AD",
-					"lookups": [
-						{
-							"code": "AD",
-							"desc": "Adequate"
-						},
-						{
-							"code": "COM",
-							"desc": "Commendable"
-						},
-						{
-							"code": "HC",
-							"desc": "Highly Commendable"
-						},
-						{
-							"code": "IA",
-							"desc": "Inadequate"
-						},
-						{
-							"code": "OS",
-							"desc": "Outstanding"
-						}
-					],
-					"desc": "Performance Index",
-					"name": "UD11_DESC"
-				},
-				...
-				"14": {
-					"id": 14,
-					"value": "DUE",
-					"lookups": [
-						{
-							"code": "COM",
-							"desc": "Review Complete"
-						},
-						{
-							"code": "DUE",
-							"desc": "Review Due"
-						}
-					],
-					"desc": "Performance Status",
-					"name": "UD14_DESC"
-				},
-				...
-				"20": {
-					"id": 20,
-					"value": "",
-					"lookups": [],
-					"desc": "",
-					"name": "UD20_DESC"
-				},
-				"21": {
-					"id": 21,
-					"value": "",
-					"desc": "",
-					"name": "UD21_DESC"
-				},
-				...
-				"26": {
-					"id": 26,
-					"value": "",
-					"desc": "",
-					"name": "UD26_DESC"
+			"areas": [
+				{
+					"area": {
+							"code": 1,
+							"description": "Performance Appraisals",
+							"responsibility": ""
+					},
+					"ud": {
+							"1": {
+							"id": 1,
+							"value": "Y",
+							"desc": "2010 Review",
+							"name": "UD1_DESC"
+							},
+							...,
+							"12": {
+									"id": 12,
+									"value": "COM",
+									"lookups": [
+												{
+													"code": "AD",
+													"desc": "Adequate"
+												},
+												{
+													"code": "COM",
+													"desc": "Commendable"
+												}
+									],
+									"desc": "2009 Rating",
+									"name": "UD12_DESC"
+							}
+					}
 				}
+			],
+			"__tassversion": "01.053.3.000",
+			"token": {
+					"code": 1000016,
+					"area": 1,
+					"includelookups": true,
+					"timestamp": "{ts '2021-01-21 16:36:51'}"
 			}
 		}
-	]
     ```
  
 * **Error Response:**

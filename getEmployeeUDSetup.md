@@ -31,110 +31,34 @@
 * **Success Response:**
 
     ```javascript
-    "area": {
-		"code": 1,
-		"description": "Performance Appraisals",
-		"responsibility": ""
-	},
-	"ud": [
 		{
-			"id": 1,
-			"trig": "",
-			"desc": "2010 Review",
-			"name": "UD1_DESC"
-		},
-		{
-			"id": 2,
-			"trig": "",
-			"desc": "10 Checklist complet",
-			"name": "UD2_DESC"
-		},
-		{
-			"id": 3,
-			"trig": "",
-			"desc": "Req Courses complete",
-			"name": "UD3_DESC"
-		},
-		{
-			"id": 4,
-			"trig": "",
-			"desc": "",
-			"name": "UD4_DESC"
-		},
-		...
-			{
-			"id": 10,
-			"trig": "",
-			"desc": "",
-			"name": "UD10_DESC"
-		},
-		{
-			"id": 11,
-			"trig": "",
-			"lookups": [
+			"area": {
+					"code": 1,
+					"description": "Performance Appraisals",
+					"responsibility": ""
+			},
+			"ud": [
 				{
-					"code": "AD",
-					"desc": "Adequate"
+					"id": 1,
+					"trig": "Y",
+					"desc": "2010 Review",
+					"name": "UD1_DESC"
 				},
 				{
-					"code": "COM",
-					"desc": "Commendable"
+					"id": 2,
+					"trig": "",
+					"desc": "10 Checklist complet",
+					"name": "UD2_DESC"
 				},
-				{
-					"code": "HC",
-					"desc": "Highly Commendable"
-				},
-				{
-					"code": "IA",
-					"desc": "Inadequate"
-				},
-				{
-					"code": "OS",
-					"desc": "Outstanding"
-				}
+				...
 			],
-			"desc": "Performance Index",
-			"name": "UD11_DESC"
-		},
-		...
-		{
-			"id": 14,
-			"trig": "",
-			"lookups": [
-				{
-					"code": "COM",
-					"desc": "Review Complete"
-				},
-				{
-					"code": "DUE",
-					"desc": "Review Due"
-				}
-			],
-			"desc": "Performance Status",
-			"name": "UD14_DESC"
-		},
-		...
-		{
-			"id": 20,
-			"trig": "",
-			"lookups": [],
-			"desc": "",
-			"name": "UD20_DESC"
-		},
-		{
-			"id": 21,
-			"trig": "",
-			"desc": "",
-			"name": "UD21_DESC"
-		},
-		...
-		{
-			"id": 26,
-			"trig": "",
-			"desc": "",
-			"name": "UD26_DESC"
+			"__tassversion": "01.053.3.000",
+			"token": {
+					"area": 1,
+					"includelookups": true,
+					"timestamp": "{ts '2021-01-21 16:40:28'}"
+			}
 		}
-	]
     ```
  
 * **Error Response:**

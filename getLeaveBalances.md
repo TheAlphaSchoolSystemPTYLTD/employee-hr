@@ -27,40 +27,39 @@
 * **Success Response:**
 
     ```javascript
-      "leave_balances": [
-        {
-          "accrual_code": "SCF",
-          "accrual_start_date": "16/09/1995",
-          "unit": "Hours",
-          "description": "Sick Current Full",
-          "quantity_as_at_date": "23/09/2016",
-          "entitlement_quantity": 55
-        },
-        {
-          "accrual_code": "SCH",
-          "accrual_start_date": "16/09/1995",
-          "unit": "Hours",
-          "description": "Sick Current Half",
-          "quantity_as_at_date": "23/09/2016",
-          "entitlement_quantity": 55
-        },
-        {
-          "accrual_code": "SNF",
-          "accrual_start_date": "16/09/1995",
-          "unit": "Hours",
-          "description": "Sick Non-current Full",
-          "quantity_as_at_date": "23/09/2016",
-          "entitlement_quantity": 385
-        },
-        {
-          "accrual_code": "SNH",
-          "accrual_start_date": "16/09/1995",
-          "unit": "Hours",
-          "description": "Sick Non-current Half",
-          "quantity_as_at_date": "23/09/2016",
-          "entitlement_quantity": 385
+      {
+        "leave_balances": [
+                {
+                  "accrual_code": "ANN",
+                  "accrual_start_date": "04/09/2000",
+                  "unit": "Hours",
+                  "description": "Annual Leave Accrual",
+                  "quantity_as_at_date": "15/05/2009",
+                  "entitlement_quantity": 0
+                },
+                {
+                  "accrual_code": "LSC",
+                  "accrual_start_date": "04/09/2000",
+                  "unit": "Hours",
+                  "description": "Long Service Leave (C)",
+                  "quantity_as_at_date": "21/08/2020",
+                  "entitlement_quantity": 494.95418
+                },
+                {
+                  "accrual_code": "SCK",
+                  "accrual_start_date": "04/09/2000",
+                  "unit": "Hours",
+                  "description": "Sick Leave",
+                  "quantity_as_at_date": "21/08/2020",
+                  "entitlement_quantity": 768.629077
+                }
+        ],
+        "__tassversion": "01.053.3.000",
+        "token": {
+            "code": 1000016,
+            "timestamp": "{ts '2021-01-21 16:42:48'}"
         }
-      ]
+      }
     ```
  
 * **Error Response:**
