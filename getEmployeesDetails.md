@@ -85,9 +85,9 @@
                       "state": "QLD",
                       "post_code": 4020,
                       "home_phone": "123456789 333",
-                      "relationship": "Slave",
+                      "relationship": "Partner",
                       "work_phone": "123456789 333",
-                      "name": "ssdtr"
+                      "name": "Jane Johnstone"
                 }
               }
         ],
