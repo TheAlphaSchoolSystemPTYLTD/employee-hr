@@ -7,6 +7,8 @@
   TASS v48 - Method Added
   
   TASS v49.7.044 - Added optional `includephoto` and `thumbnail` parameters
+
+  TASS v55.3.000 - Added optional `update_on`, `update_on_from` and `update_on_to` parameters
   
 * **Version:**
 
@@ -20,13 +22,23 @@
 
    **Required:**
 
-   `date [date dd/mm/yyyy]` -  Termination Date
+   `date [date dd/mm/yyyy]` -  Termination Date. Results will omit employee records that finished before this date.
    
    **Optional:**
 
    `code [string]` - Employee code
    
    `includephoto [boolean]` -  Must be 'true' or 'false' for whether returning employee photo.
+
+   `update_on [date dd/mm/yyyy]` - This Will return employees with a Last Updated date that were updated on this date.
+
+   `update_on_to [date dd/mm/yyyy]` - This Will return employees with a Last Updated date up until the date passed in.
+
+   `update_on_from [date dd/mm/yyyy]` - This Will return employees with a Last Updated date from the date in question to the current date or to the `update_on_to` date (if passed in).
+
+   Using both `update_on_from` and `update_on_to` will return employees with a Last Updated date between the date range.
+
+   !> Use `update_on` to return records from a particular date OR `update_on_from` and `update_on_to` to specify a date range.
 
    **Conditional:**
  
@@ -55,27 +67,29 @@
                       "home_phone": "123456789 333"
                 },
                 "general": {
-                      "initials": "ASJ",
+                      "initials": "A",
                       "employment_status": "F",
                       "surname": "Johnstone",
                       "marital_status": "M",
-                      "supervisor": "",
+                      "last_update_on": "15/02/2019 05:04:04 PM",
+                      "supervisor": 1000007,
                       "position_title": "Head of Senior School",
                       "start_date": "04/09/2000",
                       "employee_code": 1000016,
-                      "school_email": "AJSCHOOL@TASSWEB.COM",
+                      "school_email": "AJohnstone@tassweb.com.au",
                       "teacher_code": "AJ",
                       "position_text": "Teacher",
+                      "last_update_by": "ken",
                       "termination_date": "",
-                      "supervisor_2": "",
-                      "preferred_name": "Al",
-                      "name_suffixes": "BA, DipTch (MIT), QCT",
-                      "gender": "U",
+                      "supervisor_2": 1000012,
+                      "preferred_name": "Alan",
+                      "name_suffixes": "",
+                      "gender": "M",
                       "title": "Mr",
-                      "driver_licence_no": "X5367",
-                      "date_of_birth": "21/06/1968",
+                      "driver_licence_no": "",
+                      "date_of_birth": "01/11/1968",
                       "supplier_code": "",
-                      "given_names": "Alan Fred"
+                      "given_names": "Alan Pierre"
                 },
                 "next_of_kin": {
                       "town_suburb": "KIPPA RING",
