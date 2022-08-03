@@ -5,6 +5,8 @@
 * **Version History:**
 
 	TASS v50.0 - Method Added
+	
+	TASS v57.9 - Expand UD fields up to 40
 
 * **Version:**
 
@@ -47,16 +49,16 @@
 				{
 					"id": 2,
 					"trig": "",
-					"desc": "10 Checklist complet",
+					"desc": "10 Checklist complete",
 					"name": "UD2_DESC"
 				},
-				...
+				... // 38 items
 			],
-			"__tassversion": "01.053.3.000",
+			"__tassversion": "01.057.9.000",
 			"token": {
 					"area": 1,
 					"includelookups": true,
-					"timestamp": "{ts '2021-01-21 16:40:28'}"
+					"timestamp": "{ts '2022-08-01 10:33:03'}"
 			}
 		}
     ```

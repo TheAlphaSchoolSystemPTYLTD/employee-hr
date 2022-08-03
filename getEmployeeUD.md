@@ -5,6 +5,8 @@
 * **Version History:**
 
 	TASS v50.0 - Method Added
+	
+	TASS v57.9 - Expand UD fields up to 40
 
 * **Version:**
 
@@ -43,10 +45,10 @@
 					},
 					"ud": {
 							"1": {
-							"id": 1,
-							"value": "Y",
-							"desc": "2010 Review",
-							"name": "UD1_DESC"
+								"id": 1,
+								"value": "Y",
+								"desc": "2010 Review",
+								"name": "UD1_DESC"
 							},
 							...,
 							"12": {
@@ -64,16 +66,23 @@
 									],
 									"desc": "2009 Rating",
 									"name": "UD12_DESC"
+							},
+							...,
+							"40": {
+								"id": 40,
+								"value": "",
+								"desc": "",
+								"name": "UD40_DESC"
 							}
 					}
 				}
 			],
-			"__tassversion": "01.053.3.000",
+			"__tassversion": "01.057.9.000",
 			"token": {
 					"code": 1000016,
 					"area": 1,
 					"includelookups": true,
-					"timestamp": "{ts '2021-01-21 16:36:51'}"
+					"timestamp": "{ts '2022-08-01 10:33:03'}"
 			}
 		}
     ```
