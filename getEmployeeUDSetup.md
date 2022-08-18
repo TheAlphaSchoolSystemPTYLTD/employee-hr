@@ -20,7 +20,7 @@
 
    **Required:**
  
-	`area [integer]` - Area code                    
+	`area [integer]` - Area code
 
    **Optional:**
 
@@ -76,13 +76,6 @@
 	```javascript
 	"__invalid": {
 		"area": "Value must be a valid integer."
-	}
-	```
-
-	Invalid `area` not between 1 and 9.
-	```javascript
-	"__invalid": {
-		"area": "Value must be a valid integer between 1 and 9."
 	}
 	```
 	
