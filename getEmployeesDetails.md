@@ -73,6 +73,7 @@
                       "marital_status": "M",
                       "last_update_on": "15/02/2019 05:04:04 PM",
                       "supervisor": 1000007,
+                      "ceider": 11779,
                       "position_title": "Head of Senior School",
                       "start_date": "04/09/2000",
                       "employee_code": 1000016,
