@@ -10,6 +10,8 @@
 
   TASS v55.3.000 - Added optional `update_on`, `update_on_from` and `update_on_to` parameters
   
+  TASS v57.11 - Ceider data has been added to the response
+  
 * **Version:**
 
   2
