@@ -6,6 +6,8 @@
 
 	TASS v51.1 - Method Added
 
+	TASS v57.11 - Added an optional `ceider` parameter.
+
 * **Version:**
 
 	2
@@ -101,6 +103,8 @@
 	`sms_flg [string]` - sms flag.
 
 	`school_email [email]` - school email.
+
+	`ceider [string]` - ceider.
 
 * **Success Response:**
 
@@ -774,6 +778,18 @@
 		}
 	}
 	```
+
+	`ceider` length longer than 9
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"ceider": "exceeds 9 characters."
+			}
+		}
+	}
+	```
+
 
 * **Sample Parameters:**
 
