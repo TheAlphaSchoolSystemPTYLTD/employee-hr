@@ -10,6 +10,8 @@
 
   TASS v55.3.000 - Added optional `update_on`, `update_on_from` and `update_on_to` parameters
   
+  TASS v57.11 - Ceider data has been added to the response
+  
 * **Version:**
 
   2
@@ -73,6 +75,7 @@
                       "marital_status": "M",
                       "last_update_on": "15/02/2019 05:04:04 PM",
                       "supervisor": 1000007,
+                      "ceider": 11779,
                       "position_title": "Head of Senior School",
                       "start_date": "04/09/2000",
                       "employee_code": 1000016,
