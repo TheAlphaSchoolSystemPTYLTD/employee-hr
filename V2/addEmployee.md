@@ -1,4 +1,4 @@
-**AddEmployee**
+**addEmployee**
 ----
 	Returns "success" and a count of added employee(s), or a structure of invalid validations "__invalid" belonging to employee(s).
 	
