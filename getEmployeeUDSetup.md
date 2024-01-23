@@ -4,13 +4,17 @@
 	
 * **Version History:**
 
-	TASS v50.0 - Method Added
-	
-	TASS v57.9 - Expand UD fields up to 40
+    Version | Description
+    --- | --- |
+    TASS v59.02 | New V3 API endpoint released.
 
 * **Version:**
 
-	2
+    3
+
+* **Permission:**
+
+    Employee/HR Setup > ---HR User Defined Areas tab > View
 
 * **Method:**
 
