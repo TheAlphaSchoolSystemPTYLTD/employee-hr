@@ -32,12 +32,9 @@
     update_on_to | date | No | Return employees with a Last Updated date up until the date passed in.
     update_on_from | date | No | Return employees with a Last Updated date from the date in question to the current date or to the `update_on_to` date (if passed in).
 
+    <i>Using both `update_on_from` and `update_on_to` will return employees with a Last Updated date between the date range.</i>
 
-
-   Using both `update_on_from` and `update_on_to` will return employees with a Last Updated date between the date range.
-
-   !> Use `update_on` to return records from a particular date OR `update_on_from` and `update_on_to` to specify a date range.
-
+    <i> **!>** Use `update_on` to return records from a particular date OR `update_on_from` and `update_on_to` to specify a date range.</i>
   
 * **Success Response:**
 
