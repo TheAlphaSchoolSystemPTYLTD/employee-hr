@@ -4,34 +4,30 @@
 	
 * **Version History:**
 
-	TASS v50.0 - Method Added
-	
-	TASS v57.9 - Expand UD fields up to 40
+    Version | Description
+    --- | --- |
+    TASS v59.02 | New V3 API endpoint released.
 
 * **Version:**
 
-	2
+    3
+
+* **Permission:**
+
+    Employee/HR > Employees ---UD Areas tab > View
 
 * **Method:**
 
 	`GET | POST`
+
+*  **Parameters:**
+
+    Parameter Name | Type | Mandatory | Notes
+    --- | :---: | :---: | --- |
+    code | integer | Yes | Employee code.
+    area | integer | No | Area code.
+    includelookups | boolean | No | Include lookups.
   
-* **Params:**
-
-   **Required:**
- 
-	`code [integer]` - Employee code
-
-   **Optional:**
-
-    `area [integer]` - Area code
-
-	`includelookups [boolean]` - Include lookups
-
-   **Conditional:**
-
-	none
-
 * **Success Response:**
 
     ```javascript
