@@ -24,7 +24,7 @@
 
     Parameter Name | Type | Mandatory | Notes
     --- | :---: | :---: | --- |
-    area | integer | No | Area code.
+    area | integer | Yes | Area code.
     includelookups | boolean | No | Include lookups.
     
 * **Success Response:**
