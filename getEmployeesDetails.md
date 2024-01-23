@@ -24,35 +24,21 @@
 
     Parameter Name | Type | Mandatory | Notes
     --- | :---: | :---: | --- |
-    date | date | Yes | Area code.
-    includelookups | boolean | No | Include lookups.
-  
-*  **Params:**
+    date | date | Yes | Termination Date. Results will omit employee records that finished before this date.
+    thumbnail | boolean | Conditional |  Must be 'true' or 'false' for whether or not to employee thumbnail photo. Only valid where `includephoto` is 'true'.
+    code | string]` - Employee code
+    includephoto | boolean | No | Must be 'true' or 'false' for whether returning employee photo.
+    update_on | date | No | Return employees with a Last Updated date that were updated on this date.
+    update_on_to | date | No | Return employees with a Last Updated date up until the date passed in.
+    update_on_from | date | No | Return employees with a Last Updated date from the date in question to the current date or to the `update_on_to` date (if passed in).
 
-   **Required:**
 
-   `date [date dd/mm/yyyy]` -  Termination Date. Results will omit employee records that finished before this date.
-   
-   **Optional:**
-
-   `code [string]` - Employee code
-   
-   `includephoto [boolean]` -  Must be 'true' or 'false' for whether returning employee photo.
-
-   `update_on [date dd/mm/yyyy]` - This Will return employees with a Last Updated date that were updated on this date.
-
-   `update_on_to [date dd/mm/yyyy]` - This Will return employees with a Last Updated date up until the date passed in.
-
-   `update_on_from [date dd/mm/yyyy]` - This Will return employees with a Last Updated date from the date in question to the current date or to the `update_on_to` date (if passed in).
 
    Using both `update_on_from` and `update_on_to` will return employees with a Last Updated date between the date range.
 
    !> Use `update_on` to return records from a particular date OR `update_on_from` and `update_on_to` to specify a date range.
 
-   **Conditional:**
- 
-   `thumbnail [boolean]` -  Must be 'true' or 'false' for whether or not to employee thumbnail photo. Only valid where `includephoto` is 'true'
-
+  
 * **Success Response:**
 
     ```javascript
