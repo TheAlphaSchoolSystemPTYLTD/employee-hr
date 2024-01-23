@@ -19,21 +19,14 @@
 * **Method:**
 
 	`GET | POST`
-  
-* **Params:**
 
-   **Required:**
- 
-	`area [integer]` - Area code
+*  **Parameters:**
 
-   **Optional:**
-
-	`includelookups [boolean]` - Include lookups
-
-   **Conditional:**
-
-	none
-
+    Parameter Name | Type | Mandatory | Notes
+    --- | :---: | :---: | --- |
+    area | integer | No | Area code.
+    includelookups | boolean | No | Include lookups.
+    
 * **Success Response:**
 
     ```javascript
