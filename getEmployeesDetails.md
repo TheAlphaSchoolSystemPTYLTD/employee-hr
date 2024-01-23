@@ -4,21 +4,28 @@
 
 * **Version History:**
 
-  TASS v48 - Method Added
-  
-  TASS v49.7.044 - Added optional `includephoto` and `thumbnail` parameters
+    Version | Description
+    --- | --- |
+    TASS v59.02 | New V3 API endpoint released.
 
-  TASS v55.3.000 - Added optional `update_on`, `update_on_from` and `update_on_to` parameters
-  
-  TASS v57.11 - Ceider data has been added to the response
-  
 * **Version:**
 
-  2
+    3
+
+* **Permission:**
+
+    Employee/HR > Employees > View
 
 * **Method:**
 
-  `GET | POST`
+	`GET | POST`
+
+*  **Parameters:**
+
+    Parameter Name | Type | Mandatory | Notes
+    --- | :---: | :---: | --- |
+    date | date | Yes | Area code.
+    includelookups | boolean | No | Include lookups.
   
 *  **Params:**
 
