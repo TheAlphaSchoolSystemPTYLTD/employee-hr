@@ -17,4 +17,5 @@ This API extracts the following employee related information:
   * getEmployeeUDSetup
   * getLeaveBalances
 
-V2 and V3 versions of this API are available.
+
+**V2 and V3 versions of this API are available.**
