@@ -4,69 +4,108 @@
 	
 * **Version History:**
 
-    Version | Description
-    --- | --- |
-    TASS v59.02 | New V3 API endpoint released.
+	TASS v51.1 - Method Added
+
+	TASS v57.11 - Added an optional `ceider` parameter.
 
 * **Version:**
 
-    3
-
-* **Permission:**
-
-    Employee/HR > Employees > Add
+	2
 
 * **Method:**
 
 	`GET | POST`
+	
+*  **Params:**
 
-*  **Parameters:**
+	**Required:**
 
-    Parameter Name | Type | Mandatory | Notes
-    --- | :---: | :---: | --- |
-    salutation_flag | string | Yes | Salutation.
-    surname_text | string | Yes | Surname.
-    given_names_text | string | Yes | Given names.
-    prefer_name_text | string | Yes | Preferred name.
-    initials_text | string | Yes | Initials.
-    start_date | date | Yes | Start date.
-    sex_flag | string | Yes | Gender.
-    status_text | string | Yes | Employee status.
-    city_text | string | Yes | Town / Suburb.
-    add1_text | string | Yes | Address line 1.
-    emp_code | string | Conditional | Employee code. Required if employee code format is 'alpha-numeric'.
-    state_text | string | Conditional | State code. Required if country code is not passed in or passed in as 'AU'.
-    post_code | string | Conditional | Postcode. Required if country code is not passed in or passed in as 'AU'.
-    country_text | string | No | Country code.
-    add2_text | string | No | Address line 2.
-    phone_h_text | string | No | Home phone.
-    phone_w_text | string | No | Work phone.
-    marital_stat_flag | string | No | Marital status.
-    birth_date | date | No | Birth date.
-    driv_lic_text | string | No | Driver license.
-    position_text | string | No | Position text.
-    nok_name_text | string | No | Next of kin name.
-    nok_relat_text | string | No | Next of kin relationship.
-    nok_add1_text | string | No | Next of kin address line 1.
-    nok_add2_text | string | No | Next of kin address line 2.
-    nok_city_text | string | No | Next of kin town / suburb.
-    nok_state_text | string | No | Next of kin state.
-    nok_post_code | string | No | Next of kin post code.
-    nok_country_text | string | No | Next of kin country.
-    nok_phone_h_text | string | No | Next of kin home phone.
-    nok_phone_w_text | string | No | Next of kin work phone.
-    mob_phone | string | No | Mobile phone.
-    e_mail | email | No | Email.
-    web_password | string | No | Kiosk password.
-    name_suffix | string | No | Name suffix.
-    position_title | string | No | Position title.
-    vend_code | string | No | Supplier code.
-    supervisor_code | string | No | Supervisor code.
-    supervisor2_code | string | No | Supervisor2 code.
-    sms_flg | string | No | SMS flag.
-    school_email | email | No | School email.
-    ceider | string | No | Ceider.
-   
+	`salutation_flag [string]` - salutation.
+
+	`surname_text [string]` - surname.
+
+	`given_names_text [string]` - given names.
+
+	`prefer_name_text [string]` - preferred name.
+
+	`initials_text [string]` - initials.
+
+	`start_date [date]` - start date.
+
+	`sex_flag [string]` - gender.
+
+	`status_text [string]` - employeement status.
+
+	`city_text [string]` - town / suburb.
+
+	`add1_text [string]` - address line 1.
+
+	**Conditional:**
+
+	`emp_code [string]` - employee code. Required if Employee Code Format is 'Alpha-numeric'.
+
+	`state_text [string]` - state code. Required if country code is not passed in or passed in as 'AU'.
+
+	`post_code [string]` - post code. Required if country code is not passed in or passed in as 'AU'.
+
+	**Optional:**
+	
+	`add2_text [string]` - address line 2.
+
+	`phone_h_text [string]` - home phone.
+
+	`phone_w_text [string]` - work phone.
+
+	`marital_stat_flag [string]` - marital status.
+
+	`birth_date [date]` - birth date.
+
+	`driv_lic_text [string]` - driver license.
+
+	`position_text [string]` - position text.
+
+	`nok_name_text [string]` - next of kin name.
+
+	`nok_relat_text [string]` - next of kin relationship.
+
+	`nok_add1_text [string]` - next of kin address line 1.
+
+	`nok_add2_text [string]` - next of kin address line 2.
+
+	`nok_city_text [string]` - next of kin town / suburb.
+
+	`nok_state_text [string]` - next of kin state.
+
+	`nok_post_code [string]` - next of kin post code.
+
+	`nok_country_text [string]` - next of kin country.
+
+	`nok_phone_h_text [string]` - next of kin home phone.
+
+	`nok_phone_w_text [string]` - next of kin work phone.
+
+	`mob_phone [string]` - mobile phone.
+
+	`e_mail [email]` - email.
+
+	`web_password [string]` - Kiosk password.
+
+	`name_suffix [string]` - name suffix.
+
+	`position_title [string]` - position title.
+
+	`vend_code [string]` - supplier code.
+
+	`supervisor_code [string]` - supervisor code.
+
+	`supervisor2_code [string]` - supervisor2 code.
+
+	`sms_flg [string]` - sms flag.
+
+	`school_email [email]` - school email.
+
+	`ceider [string]` - ceider.
+
 * **Success Response:**
 
 	```javascript

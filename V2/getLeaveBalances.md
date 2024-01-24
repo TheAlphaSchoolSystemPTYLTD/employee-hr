@@ -2,29 +2,27 @@
 ----
   Returns an array of structured Leave Balances details in JSON format.
 
-* **Version History:**
-
-    Version | Description
-    --- | --- |
-    TASS v59.02 | New V3 API endpoint released.
-
 * **Version:**
 
-    3
-
-* **Permission:**
-
-    Payroll > Employees > --- Accruals tab > View
+  2
 
 * **Method:**
 
-	`GET | POST`
+  `GET | POST`
+  
+*  **Params:**
 
-*  **Parameters:**
+   **Required:**
 
-    Parameter Name | Type | Mandatory | Notes
-    --- | :---: | :---: | --- |
-    code | string | Yes | Employee code.
+   `code [string]` - Employee code
+   
+   **Optional:**
+
+   none
+
+   **Conditional:**
+ 
+   none
 
 * **Success Response:**
 
