@@ -26,7 +26,7 @@
     --- | :---: | :---: | --- |
     date | date | Yes | Termination Date. Results will omit employee records that finished before this date.
     thumbnail | boolean | Conditional |  Must be 'true' or 'false' for whether or not to employee thumbnail photo. Only valid where `includephoto` is 'true'.
-    code | string]` - Employee code
+    code | string | No | Employee code. Leave blank or omit from parameters and all employees will be returned. Provide a single employee code or a comma delimited list of employee codes to return just those requested.
     includephoto | boolean | No | Must be 'true' or 'false' for whether returning employee photo.
     update_on | date | No | Return employees with a Last Updated date that were updated on this date.
     update_on_to | date | No | Return employees with a Last Updated date up until the date passed in.
