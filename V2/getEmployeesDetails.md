@@ -28,7 +28,7 @@
    
    **Optional:**
 
-   `code [string]` - Employee code
+   `code [string]` - Employee code. Leave blank or omit from parameters and all employees will be returned. Provide a single employee code or a comma delimited list of employee codes to return just those requested.
    
    `includephoto [boolean]` -  Must be 'true' or 'false' for whether returning employee photo.
 
