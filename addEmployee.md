@@ -66,13 +66,14 @@
     sms_flg | string | No | SMS flag.
     school_email | email | No | School email.
     ceider | string | No | Ceider.
+    alt_id | string | No | Alternate ID.
    
 * **Success Response:**
 
 	```javascript
 		{
 			"success": "You successfully saved 1 employee(s).",
-			"__tassversion": "01.053.3.000",
+			"__tassversion": "01.60.02.100",
 			"token": {
 					"employee": [
 								{
@@ -118,10 +119,11 @@
 									"nok_relat_text": "Mother",
 									"name_suffix": "MEE",
 									"country_code": "",
-									"vend_code": "00012"
+									"vend_code": "00012",
+ 									"alt_id": "ABCDEF01234"
 								}
 					],
-					"timestamp": "{ts '2021-01-21 16:32:56'}"
+					"timestamp": "{ts '2024-12-17 17:32:56'}"
 			}
 		}
 	```
@@ -750,6 +752,17 @@
 		}
 	}
 	```
+ 
+ 	`alt_id` length longer than 40
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "exceeds 40 characters."
+			}
+		}
+	}
+	```
 
 
 * **Sample Parameters:**
@@ -799,7 +812,8 @@
 					"supervisor_code":"1000075",
 					"supervisor2_code":"1000066",
 					"sms_flg":"Y",
-					"school_email":"jackschool@tass.com"
+					"school_email":"jackschool@tass.com",
+ 					"alt_id": "ABCDEF01234"
 				}
 			]
 		}
