@@ -8,6 +8,8 @@
 
 	TASS v57.11 - Added an optional `ceider` parameter.
 
+	TASS v60.02 - Added an optional `alt_id` parameter.
+
 * **Version:**
 
 	2
@@ -106,6 +108,8 @@
 
 	`ceider [string]` - ceider.
 
+	`alt_id [string]` - Alternate identifier.
+
 * **Success Response:**
 
 	```javascript
@@ -157,7 +161,8 @@
 									"nok_relat_text": "Mother",
 									"name_suffix": "MEE",
 									"country_code": "",
-									"vend_code": "00012"
+									"vend_code": "00012",
+ 									"alt_id": "AAA"
 								}
 					],
 					"timestamp": "{ts '2021-01-21 16:32:56'}"
@@ -790,7 +795,28 @@
 	}
 	```
 
+	`alt_id` length longer than 40
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "exceeds 40 characters."
+			}
+		}
+	}
+	```
 
+	`alt_id` must be unique
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "must be unique."
+			}
+		}
+	}
+	```
+ 
 * **Sample Parameters:**
 
 	```javascript
@@ -838,7 +864,8 @@
 					"supervisor_code":"1000075",
 					"supervisor2_code":"1000066",
 					"sms_flg":"Y",
-					"school_email":"jackschool@tass.com"
+					"school_email":"jackschool@tass.com",
+ 					"alt_id": "AAA"
 				}
 			]
 		}
