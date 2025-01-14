@@ -7,6 +7,7 @@
     Version | Description
     --- | --- |
     TASS v59.02 | New V3 API endpoint released.
+    TASS v60.02 | Alternate identifier added to response data.
 
 * **Version:**
 
@@ -65,6 +66,7 @@
                       "marital_status": "M",
                       "last_update_on": "15/02/2019 05:04:04 PM",
                       "supervisor": 1000007,
+                      "alt_id": 12345678,
                       "ceider": 11779,
                       "position_title": "Head of Senior School",
                       "start_date": "04/09/2000",
@@ -82,7 +84,8 @@
                       "driver_licence_no": "",
                       "date_of_birth": "01/11/1968",
                       "supplier_code": "",
-                      "given_names": "Alan Pierre"
+                      "given_names": "Alan Pierre",
+                      "alt_id": "AAA"
                 },
                 "next_of_kin": {
                       "town_suburb": "KIPPA RING",
@@ -98,11 +101,11 @@
                 }
               }
         ],
-        "__tassversion": "01.053.3.000",
+        "__tassversion": "01.60.02.100",
         "token": {
-            "date": "10/12/2016",
+            "date": "17/12/2024",
             "code": 1000016,
-            "timestamp": "{ts '2021-01-21 16:35:23'}"
+            "timestamp": "{ts '2024-12-17 16:35:23'}"
         }
       }
     ```
