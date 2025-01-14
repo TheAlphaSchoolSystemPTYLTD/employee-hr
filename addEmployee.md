@@ -74,7 +74,7 @@
 	```javascript
 		{
 			"success": "You successfully saved 1 employee(s).",
-			"__tassversion": "01.053.3.000",
+			"__tassversion": "01.60.02.100",
 			"token": {
 					"employee": [
 								{
@@ -124,7 +124,7 @@
  									"alt_id": "AAA"
 								}
 					],
-					"timestamp": "{ts '2021-01-21 16:32:56'}"
+					"timestamp": "{ts '2024-12-17 17:32:56'}"
 			}
 		}
 	```
@@ -749,6 +749,17 @@
 		"employee": {
 			"[record num]": {
 				"ceider": "exceeds 9 characters."
+			}
+		}
+	}
+	```
+ 
+ 	`alt_id` length longer than 40
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "exceeds 40 characters."
 			}
 		}
 	}
