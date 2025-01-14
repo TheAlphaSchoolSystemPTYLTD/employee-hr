@@ -11,6 +11,8 @@
   TASS v55.3.000 - Added optional `update_on`, `update_on_from` and `update_on_to` parameters
   
   TASS v57.11 - Ceider data has been added to the response
+
+  TASS v60.02 - Alternate identifier has been added to the response
   
 * **Version:**
 
@@ -92,7 +94,8 @@
                       "driver_licence_no": "",
                       "date_of_birth": "01/11/1968",
                       "supplier_code": "",
-                      "given_names": "Alan Pierre"
+                      "given_names": "Alan Pierre",
+                      "alt_id": "AAA"
                 },
                 "next_of_kin": {
                       "town_suburb": "KIPPA RING",

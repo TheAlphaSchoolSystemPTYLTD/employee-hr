@@ -7,7 +7,7 @@
     Version | Description
     --- | --- |
     TASS v59.02 | New V3 API endpoint released.
-    TASS v60.02 | Add new field alt_id to the response.
+    TASS v60.02 | Alternate identifier added to response data.
 
 * **Version:**
 
@@ -84,7 +84,8 @@
                       "driver_licence_no": "",
                       "date_of_birth": "01/11/1968",
                       "supplier_code": "",
-                      "given_names": "Alan Pierre"
+                      "given_names": "Alan Pierre",
+                      "alt_id": "AAA"
                 },
                 "next_of_kin": {
                       "town_suburb": "KIPPA RING",

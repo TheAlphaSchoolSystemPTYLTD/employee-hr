@@ -7,7 +7,8 @@
     Version | Description
     --- | --- |
     TASS v59.02 | New V3 API endpoint released.
-
+    TASS v60.02 | Added ability to update alternate identifier.
+  
 * **Version:**
 
     3
@@ -66,6 +67,7 @@
     sms_flg | string | No | SMS flag.
     school_email | email | No | School email.
     ceider | string | No | Ceider.
+    alt_id | string | No | Alternate identifier.
    
 * **Success Response:**
 
@@ -118,7 +120,8 @@
 									"nok_relat_text": "Mother",
 									"name_suffix": "MEE",
 									"country_code": "",
-									"vend_code": "00012"
+									"vend_code": "00012",
+ 									"alt_id": "AAA"
 								}
 					],
 					"timestamp": "{ts '2021-01-21 16:32:56'}"
@@ -751,6 +754,27 @@
 	}
 	```
 
+ 	`alt_id` length longer than 40
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "exceeds 40 characters."
+			}
+		}
+	}
+	```
+
+ 	`alt_id` must be unique
+	```javascript
+	"__invalid": {
+		"employee": {
+			"[record num]": {
+				"alt_id": "must be unique."
+			}
+		}
+	}
+	```
 
 * **Sample Parameters:**
 
@@ -799,7 +823,8 @@
 					"supervisor_code":"1000075",
 					"supervisor2_code":"1000066",
 					"sms_flg":"Y",
-					"school_email":"jackschool@tass.com"
+					"school_email":"jackschool@tass.com",
+ 					"alt_id": "AAA"
 				}
 			]
 		}
